@@ -21,7 +21,7 @@ export default {
   setup() {
     const router = useRouter();
     const user = ref(null);
-    const session = new Corbado.Session('pro-3280453392525787133');
+    const session = new Corbado.Session(import.meta.env.VITE_CORBADO_PROJECT_ID);
 
     const handleLogout = () => {
       session.logout()
