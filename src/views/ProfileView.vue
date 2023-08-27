@@ -1,14 +1,20 @@
 <template>
   <div>
-    <h1>Profile Page</h1>
     <div v-if="user">
+      <h1>Profile Page</h1>
       <p>
-        User-ID: {{user.userID}}
+        User-ID: {{ user.userID }}
         <br/>
-        Email: {{user.email}}
+        Email: {{ user.email }}
       </p>
+      <button @click="handleLogout">Logout</button>
     </div>
-    <button @click="handleLogout">Logout</button>
+
+    <!-- Show the "not logged in" message if the user is not logged in -->
+    <div v-else>
+      <p>You're not logged in.</p>
+      <p>Please go back to <a @click="redirectToHome">home</a> to log in.</p>
+    </div>
   </div>
 </template>
 
@@ -31,13 +37,18 @@ export default {
           .catch(err => console.log(err))
     };
 
+    const redirectToHome = () => {
+      router.push('/');
+    }
+
+
     onMounted(() => {
       session.refresh(u => {
         user.value = u;
       })
     });
 
-    return {user, handleLogout}
+    return {user, handleLogout, redirectToHome}
   }
 }
 </script>
