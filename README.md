@@ -1,29 +1,34 @@
-# passkeys-demo-vuejs
+# Complete passkeys integration example for Vue.js with Corbado
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a sample implementation of the Corbado web component being integrated into a web application built with Vue.js.
 
-## Recommended IDE Setup
+## File structure
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- `src/router/index.js`: routing for the Vue.js web app
+- `src/views/HomeView.vue`: component for the login screen
+- `src/views/ProfileView.vue`:component for the user profile information that is shown after successful authentication
 
-## Customize configuration
+## Setup
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Prerequisites
 
-## Project Setup
+Please follow the steps in [Getting started](https://docs.corbado.com/overview/getting-started) to create and configure
+a project in the [Corbado developer panel](https://app.corbado.com/signin#register).
 
-```sh
-npm install
+You need to have [Node](https://nodejs.org/en/download) and `npm` installed to run it.
+
+## Usage
+
+Run
+
+```bash
+npm i
 ```
 
-### Compile and Hot-Reload for Development
+to install all dependencies.
 
-```sh
+Finally, you can run the project locally with
+
+```bash
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
