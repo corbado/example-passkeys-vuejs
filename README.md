@@ -5,8 +5,8 @@ This is a sample implementation of the Corbado web component being integrated in
 ## File structure
 
 - `src/router/index.js`: routing for the Vue.js web app
-- `src/views/HomeView.vue`: component for the login screen
-- `src/views/ProfileView.vue`:component for the user profile information that is shown after successful authentication
+- `src/views/HomeView.vue`: component for the sign up / login screen
+- `src/views/ProfileView.vue`: component for the user profile information that is shown after successful authentication
 
 ## Setup
 
