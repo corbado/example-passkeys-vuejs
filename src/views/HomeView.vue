@@ -6,17 +6,16 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const authElement = ref(null);
 
-if (Corbado.isAuthenticated) {
-    router.push("/profile");
-}
-
 onMounted(() => {
-  Corbado.mountAuthUI(authElement.value, {
-    onLoggedIn: () => {
-      router.push("/profile");
-    },
-    isDevMode: true,
-  });
+    if (Corbado.isAuthenticated) {
+        router.push("/profile");
+    }
+    Corbado.mountAuthUI(authElement.value, {
+        onLoggedIn: () => {
+            router.push("/profile");
+        },
+        isDevMode: true,
+    });
 });
 </script>
 
