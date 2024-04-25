@@ -19,10 +19,6 @@ async function handleLogout() {
 onMounted(() => {
     user.value = Corbado.user;
 });
-
-onMounted(() => {
-    user.value = Corbado.user;
-});
 </script>
 
 <template>
