@@ -1,6 +1,6 @@
 # Passkey-First Authentication with Vue.js and Corbado
 
-This is a sample implementation of the Corbado web component being integrated into a web application built with Vue.js.
+This is a sample implementation of the Corbado web-js package being integrated into a web application built with Vue.js.
 
 Please see the [full blog post](https://www.corbado.com/blog/vuejs-passkeys) to understand the detailed steps needed to integrate passkeys into Vue.js apps.
 
