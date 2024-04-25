@@ -17,6 +17,8 @@ Please see the [full blog post](https://www.corbado.com/blog/vuejs-passkeys) to 
 Please follow the steps in [Getting started](https://docs.corbado.com/overview/getting-started) to create and configure
 a project in the [Corbado developer panel](https://app.corbado.com/signin#register).
 
+Add your projects id to an environment file as seen in `.env.example`
+
 You need to have [Node](https://nodejs.org/en/download) and `npm` installed to run it.
 
 ## Usage
