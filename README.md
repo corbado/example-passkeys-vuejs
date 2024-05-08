@@ -1,4 +1,4 @@
-# Passkey-First Authentication with Vue.js and Corbado
+# Vue.js Passkey Example App
 
 This is a sample implementation of the Corbado web-js package being integrated into a web application built with Vue.js.
 
